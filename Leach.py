@@ -52,6 +52,7 @@ for i in range(1, n+1):
     S={}
     XR={}
     YR={}
+    S[i] = {} 
     S[i]['xd'] = random.random() * xm
     XR[i] = S[i]['xd']
     S[i]['yd'] = random.random() * ym
@@ -73,6 +74,7 @@ for i in range(1, n+1):
         S[i]['ENERGY'] = 1
         plt.plot(S[i]['xd'], S[i]['yd'], '+')
 
+S[n+1] = {}
 S[n+1]['xd'] = sink['x']
 S[n+1]['yd'] = sink['y']
 plt.plot(S[n+1]['xd'],S[n+1]['yd'],'x')  
@@ -95,6 +97,7 @@ for r in range(rmax + 1):
     # Operation for epoch
     if r % round(1 / p) == 0:
         for i in range(n):
+            S[i] = {}
             S[i]['G'] = 0
             S[i]['cl'] = 0
 
@@ -120,6 +123,7 @@ for r in range(rmax + 1):
     plt.figure(1)
 
     for i in range(n):
+        S[i] = {}
         if S[i]['E'] <= 0:
             plt.plot(S[i]['xd'], S[i]['yd'], marker='.', color='red')
             dead = dead + 1
