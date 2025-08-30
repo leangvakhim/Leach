@@ -52,9 +52,9 @@ for i in range(1, n+1):
     S={}
     XR={}
     YR={}
-    S[i]['xd'] = random.random(1, 1) * xm
+    S[i]['xd'] = random.random() * xm
     XR[i] = S[i]['xd']
-    S[i]['yd'] = random.random(1, 1) * ym
+    S[i]['yd'] = random.random() * ym
     YR[i] = S[i]['yd']
     S[i]['G']=0
     # initially there are no cluster heads only nodes
