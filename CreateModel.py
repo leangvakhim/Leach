@@ -23,7 +23,7 @@ def CreateModel():
         'Joules': 0.5,
         'Send_Bit': 50**-9,
         'Receive_Bit': 50**-9,
-        'Aggreation_Bit': 5**-9,
+        'Aggregation_Bit': 5**-9,
         'Ampli_Upper': 1**-11,
         'Ampli_Under': 13**-16
     }

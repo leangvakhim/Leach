@@ -11,7 +11,7 @@ def Leach_SelectCluster(Model, Network):
     AliveIndex = [node['Energy'] > 0 for node in Network[:-1]]
     Alive = [i for i, is_Alive in enumerate(AliveIndex) if is_Alive]
 
-    Input = np.array([[node.X, node.Y] for node in Network[:-1]])
+    Input = np.array([[node['X'], node['Y']] for node in Network[:-1]])
     Input = Input[Alive]
     K = min(len(Alive), Model['NCluster'])
     kmeans_model = KMeans(n_clusters=K, random_state=42)
