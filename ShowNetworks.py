@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import time
-from Leach import Show
+from Show import Show
 
 def ShowNetworks(Nets1, Nets2):
     plt.figure()

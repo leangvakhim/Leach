@@ -1,5 +1,7 @@
 import numpy as np
-from Leach import Direct_UsedEnergy, DeadCounter, Leach_SelectCluster, Leach_UsedEnergy
+from DeadCounter import DeadCounter
+from Leach_SelectCluster import Leach_SelectCluster
+from Leach_UsedEnergy import Leach_UsedEnergy
 
 def Leach_Protocol(Model, Network):
     Iteration = Model['Iteration']

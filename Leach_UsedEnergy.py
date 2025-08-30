@@ -1,5 +1,5 @@
 import numpy as np
-from Leach import CalcDistance
+from CalcDistance import CalcDistance
 
 
 def Leach_UsedEnergy(Model, Network):

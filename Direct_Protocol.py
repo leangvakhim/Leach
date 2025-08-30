@@ -1,5 +1,6 @@
 import numpy as np
-from Leach import DeadCounter, Direct_UsedEnergy
+from DeadCounter import DeadCounter
+from Direct_UsedEnergy import Direct_UsedEnergy
 
 def Direct_Protocol(Model, Network):
     Packet = {}

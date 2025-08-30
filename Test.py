@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from IPython.display import clear_output
 from sklearn.cluster import KMeans
 import numpy as np
-from Leach import CreateModel, CreateNetwork, Leach_Protocol, Direct_Protocol, ShowNetworks
+#from Leach import CreateModel, CreateNetwork, Leach_Protocol, Direct_Protocol, ShowNetworks
 import os
 
 clear_output()
