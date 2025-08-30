@@ -5,7 +5,7 @@ def CreateModel():
         'Y': 300
     }
 
-    Model['Iteration'] = 10000
+    Model['Iteration'] = 1000
     Model['NodeNumber'] = 200
     Model['PHeadCluster'] = 0.1
     Model['P'] = 0.1
