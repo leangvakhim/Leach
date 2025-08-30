@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
 from IPython.display import clear_output
-from Leach import CreateModel
-from Leach import CreateNetwork
-from Leach import Leach_Protocol
-from Leach import Direct_Protocol
-from Leach import ShowNetworks
+from CreateModel import CreateModel
+from CreateNetwork import CreateNetwork
+from Leach_Protocol import Leach_Protocol
+from Direct_Protocol import Direct_Protocol
+from ShowNetworks import ShowNetworks
 import os
 
 clear_output()
