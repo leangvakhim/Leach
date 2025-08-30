@@ -52,9 +52,9 @@ for i in range(1, n+1):
     S={}
     XR={}
     YR={}
-    S[i]['xd'] = random(1, 1) * xm
+    S[i]['xd'] = random.random(1, 1) * xm
     XR[i] = S[i]['xd']
-    S[i]['yd'] = random(1, 1) * ym
+    S[i]['yd'] = random.random(1, 1) * ym
     YR[i] = S[i]['yd']
     S[i]['G']=0
     # initially there are no cluster heads only nodes
@@ -114,8 +114,8 @@ for r in range(rmax + 1):
     # per round
     PACKETS_TO_CH = {}
     PACKETS_TO_BS = {}
-    PACKETS_TO_CH(r+1)=0
-    PACKETS_TO_BS(r+1)=0
+    PACKETS_TO_CH[r+1]=0
+    PACKETS_TO_BS[r+1]=0
 
     plt.figure(1)
 
